@@ -273,3 +273,10 @@ body {
 strong {
   font-weight: 500;
 }
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #e67d2288;
+}
