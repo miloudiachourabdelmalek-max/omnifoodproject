@@ -1,10 +1,5 @@
 console.log("salam a jma3a");
 const h1 = document.querySelector(".heading-primary");
-h1.addEventListener("click", function () {
-  h1.textContent = "ya achour";
-  h1.style.backgroundColor = "red";
-  h1.style.padding = "5rem";
-});
 
 const yearEl = document.querySelector(".year");
 
@@ -47,10 +42,13 @@ const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     console.log(ent);
+    const section = document.querySelector(".section-hero");
     if (!ent.isIntersecting) {
-      document.body.classList.add("sticky");
+      header.classList.add("sticky");
+      section.classList.add("stickyy");
     } else {
-      document.body.classList.remove("sticky");
+      header.classList.remove("sticky");
+      section.classList.remove("stickyy");
     }
   },
   {
